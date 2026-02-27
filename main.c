@@ -155,7 +155,7 @@ int main(void)
 
 	  		  	numDisplay(x);
 	  		  	HAL_Delay(50);
-
+				//condicion para que se enciendan los leds dependiendo si se puede dividir entre 2 o no 
 	  		  	if(x%2==0)
 	  		  		GPIOA->ODR ^= LEDpoten_Pin;
 	  		  	else
@@ -290,3 +290,4 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+
